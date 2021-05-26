@@ -28,7 +28,7 @@ export function Footer() {
             </a>
           </li>
           <li className={footerNavListItem}>
-            <a href="https://www.gatsbyjs.com/cloud/">About Gatsby Cloud</a>
+            <a href="https://www.gatsbyjs.com/cloud/">About Gatsby Cloud 2</a>
           </li>
           {process.env.GATSBY_DEMO_STORE === "true" && (
             <li className={footerNavListItem}>
