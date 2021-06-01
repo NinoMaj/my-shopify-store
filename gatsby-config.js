@@ -25,6 +25,13 @@ module.exports = {
       },
     },
     "gatsby-plugin-image",
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `wv26nktetuag`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",

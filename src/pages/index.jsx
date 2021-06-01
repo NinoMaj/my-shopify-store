@@ -12,6 +12,20 @@ import {
 
 export const query = graphql`
   query {
+    us: allContentfulProduct(filter: { node_locale: { eq: "en-US" } }) {
+      edges {
+        node {
+          id
+          gatsbyPath(filePath: "/products/{ContentfulProduct.id}")
+          productName {
+            productName
+          }
+          image {
+            gatsbyImageData(layout: FIXED, width: 75)
+          }
+        }
+      }
+    }
     shopifyCollection(handle: { eq: "frontpage" }) {
       products {
         ...ProductCard
@@ -20,6 +34,7 @@ export const query = graphql`
   }
 `
 export default function IndexPage({ data }) {
+  console.log('data', data)
   return (
     <Layout>
       <div className={container}>
