@@ -16,12 +16,8 @@ export const query = graphql`
       edges {
         node {
           id
-          gatsbyPath(filePath: "/products/{ContentfulProduct.id}")
           productName {
             productName
-          }
-          image {
-            gatsbyImageData(layout: FIXED, width: 75)
           }
         }
       }
