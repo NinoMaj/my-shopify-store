@@ -30,7 +30,7 @@ export const query = graphql`
   }
 `
 export default function IndexPage({ data }) {
-  console.log('data2', data)
+  console.log('data3', data)
   return (
     <Layout>
       <div className={container}>
