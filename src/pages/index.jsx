@@ -16,6 +16,9 @@ export const query = graphql`
       edges {
         node {
           id
+          productName {
+            productName
+          }
         }
       }
     }
