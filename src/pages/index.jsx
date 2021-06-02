@@ -33,6 +33,7 @@ export default function IndexPage({ data }) {
   console.log('data3', data)
   return (
     <Layout>
+      <div>{data.us.edges.map(edge => <p key={edge.node.id}>{edge.node.productName}</p>)}</div>
       <div className={container}>
         <h1 className={intro}>Welcome to the GatsbyJS + Shopify Demo Store.</h1>
         <p className={callOut}>
